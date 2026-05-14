@@ -34,19 +34,6 @@ gcc -o assignment1 assignment1.c
 
 The code is intended to compile and run on the Eustis server.
 
-## Input Format
-
-```
-t                              // number of test cases (t <= 25)
-  c                            // number of courses for this test case (c <= 500)
-    cn                         // course name (lowercase, single word, max 20 chars)
-    s                          // number of sections (s <= 10)
-      st m                     // students in section, assignments in section (st <= 500, m <= 20)
-        id lname score1 ... scoreM   // one line per student
-      ...                      // more sections
-    ...                        // more courses
-...                            // more test cases
-```
 
 Student ids are unique. All scores are positive floats `<= 100`.
 
